@@ -154,9 +154,11 @@ a {
     left: 0;
     right: 0;
     bottom: 0;
-    /* Placeholder gradient until tractor image is placed */
-    background: radial-gradient(circle at top right, rgba(56, 189, 248, 0.1), transparent 60%),
-        radial-gradient(circle at bottom left, rgba(15, 23, 42, 1), transparent);
+    /* Hero Image with Dark Overlay */
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)),
+        url('assets/Blowershot2.png');
+    background-size: cover;
+    background-position: center;
     z-index: -1;
 }
 
@@ -649,8 +651,7 @@ a {
     width: 6px;
 }
 
-background: rgba(0, 0, 0, 0.1);
-}
+
 
 .activity-log::-webkit-scrollbar-thumb {
     background: var(--clr-navy-700);
