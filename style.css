@@ -136,6 +136,16 @@ a {
     text-align: center;
 }
 
+/* Live Operations Specifics */
+.section-live-ops {
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)),
+        url('assets/aurorasuite.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* Ensure text pops against the busy image */
+}
+
 /* Hero Specifics */
 .hero {
     padding: 8rem 0 5rem;
