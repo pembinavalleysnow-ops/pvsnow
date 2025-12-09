@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembina Valley Snow | Premium Snow Removal</title>
+    <meta name="description"
+        content="Professional snow removal services in Morden and Winkler. Reliable, efficient, and affordable residential snow clearing.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/PVS%20Flavicon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-card">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <img src="assets/pvslogo.png" alt="PVS Logo" height="50">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active" style="color: var(--clr-ice-400);">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="#contact" class="btn btn-primary">Reserve Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content text-center">
+            <h1 class="hero-title" style="font-weight: 800; text-transform: uppercase; letter-spacing: 2px;">
+    </header>
+
+    <main>
+        <!-- Live Operations Center -->
+        <section class="section section-dark">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">LIVE <span class="text-gradient">OPERATIONS</span></h2>
+                    <p class="section-subtitle">Real-time data from our fleet.</p>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- COMING SOON OVERLAY -->
+                    <div class="coming-soon-overlay">
+                        <div class="coming-soon-badge">Feature In Development</div>
+                        <p class="coming-soon-text">
+                            We are building a transparent operation. <br>
+                            Real-time fleet tracking and service logs coming for the 2025/2026 season.
+                        </p>
+                    </div>
+                    <!-- Snow Stats -->
+                    <div class="dashboard-card glass-card">
+                        <div class="stat-icon">❄️</div>
+                        <h3>Snow Accumulation</h3>
+                        <div class="stat-row">
+                            <span>Season Total</span>
+                            <strong>110 cm</strong>
+                        </div>
+                        <div class="stat-row">
+                            <span>Last 24 Hours</span>
+                            <strong>0 cm</strong>
+                        </div>
+                        <div class="stat-row">
+                            <span>Current Trigger</span>
+                            <strong style="color: var(--clr-ice-400);">Standby</strong>
+                        </div>
+                    </div>
+
+                    <!-- Service Log -->
+                    <div class="dashboard-card glass-card" style="grid-column: span 2;">
+                        <h3>Recent Fleet Activity</h3>
+                        <div class="activity-log">
+                            <div class="log-item">
+                                <span class="log-time">08:00 AM</span>
+                                <span class="log-msg">Fleet returned to base. All routes clear.</span>
+                            </div>
+                            <div class="log-item">
+                                <span class="log-time">04:30 AM</span>
+                                <span class="log-msg">Tractor 3 started Winkler South route.</span>
+                            </div>
+                            <div class="log-item">
+                                <span class="log-time">04:15 AM</span>
+                                <span class="log-msg">Tractor 1 dispatched to Morden West.</span>
+                            </div>
+                            <div class="log-item">
+                                <span class="log-time">02:00 AM</span>
+                                <span class="log-msg">Snow accumulation reached 5cm. Deploying fleet.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Teaser -->
+        <section class="section">
+            <div class="container text-center">
+                <div class="section-header">
+                    <h2 class="section-title">PREMIUM <span class="text-gradient">SERVICE</span></h2>
+                    <p class="section-subtitle">GPS Tracking. Real-Time Updates. No Stress.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">📍</div>
+                        <h3>Live GPS Tracking</h3>
+                        <p>Watch our fleet on the map in real-time.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast Service</h3>
+                        <p>Dispatched automatically at 5cm accumulation.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">✅</div>
+                        <h3>Quality Guarantee</h3>
+                        <p>We clear the city ridge and send photo logs.</p>
+                    </div>
+                </div>
+
+                <br>
+                <a href="services.html" class="btn btn-outline" style="margin-top: 2rem;">Compete Service Details
+                    &rarr;</a>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="container hero-content text-center">
+                <h1 class="hero-title" style="font-weight: 800; text-transform: uppercase; letter-spacing: 2px;">
+                    SNOW BLOWING <span class="text-gradient">SIMPLIFIED</span>
+                </h1>
+                <p class="hero-subtitle">Premium Tractor-Blown Snow Clearing for Morden & Winkler.</p>
+
+                <!-- Capacity / Reservation Box -->
+                <div class="reservation-box glass-card">
+                    <h3>LIMITED CAPACITY FOR 2025/2026</h3>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                    <p class="capacity-text">Remaining Spots: <strong>12 / 80</strong></p>
+                    <a href="#contact" class="btn btn-primary btn-large glow-anim">RESERVE SEASON PASS</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glow-effect"></div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Live Operations Center (New Section) -->
+            <section class="section section-dark">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">LIVE <span class="text-gradient">OPERATIONS</span></h2>
+                        <p class="section-subtitle">Real-time data from our fleet.</p>
+                    </div>
+
+                    <div class="dashboard-grid">
+                        <!-- Snow Stats -->
+                        <div class="dashboard-card glass-card">
+                            <div class="stat-icon">❄️</div>
+                            <h3>Snow Accumulation</h3>
+                            <div class="stat-row">
+                                <span>Season Total</span>
+                                <strong>110 cm</strong>
+                            </div>
+                            <div class="stat-row">
+                                <span>Last 24 Hours</span>
+                                <strong>0 cm</strong>
+                            </div>
+                            <div class="stat-row">
+                                <span>Current Trigger</span>
+                                <strong style="color: var(--clr-ice-400);">Standby</strong>
+                            </div>
+                        </div>
+
+                        <!-- Service Log -->
+                        <div class="dashboard-card glass-card" style="grid-column: span 2;">
+                            <h3>Recent Fleet Activity</h3>
+                            <div class="activity-log">
+                                <div class="log-item">
+                                    <span class="log-time">08:00 AM</span>
+                                    <span class="log-msg">Fleet returned to base. All routes clear.</span>
+                                </div>
+                                <div class="log-item">
+                                    <span class="log-time">04:30 AM</span>
+                                    <span class="log-msg">Tractor 3 started Winkler South route.</span>
+                                </div>
+                                <div class="log-item">
+                                    <span class="log-time">04:15 AM</span>
+                                    <span class="log-msg">Tractor 1 dispatched to Morden West.</span>
+                                </div>
+                                <div class="log-item">
+                                    <span class="log-time">02:00 AM</span>
+                                    <span class="log-msg">Snow accumulation reached 5cm. Deploying fleet.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Keep Aurora Section but simplified header? No, keeping consistent -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">WHY <span class="text-gradient">CHOOSE US?</span></h2>
+                        <p class="section-subtitle">Technology meets reliability.</p>
+                    </div>
+                    <!-- Features Grid Content -->
+                    <div class="features-grid">
+                        <div class="feature-card glass-card">
+                            <div class="feature-icon">📍</div>
+                            <h3>Live GPS Tracking</h3>
+                            <p>Watch our fleet on the map in real-time.</p>
+                        </div>
+                        <div class="feature-card glass-card">
+                            <div class="feature-icon">⏱️</div>
+                            <h3>Real-Time Updates</h3>
+                            <p>Receive instant notifications + ETA.</p>
+                        </div>
+                        <div class="feature-card glass-card">
+                            <div class="feature-icon">✅</div>
+                            <h3>Service Logs</h3>
+                            <p>Confirmation photo and timestamp every visit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Section -->
+            <section id="pricing" class="section section-dark">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Simple <span class="text-gradient">Pricing</span></h2>
+                        <p class="section-subtitle">Competitive rates for Morden & Winkler residents.</p>
+                    </div>
+
+                    <div class="pricing-grid">
+                        <!-- Economy Pass -->
+                        <div class="pricing-card glass-card">
+                            <div class="card-header">
+                                <h3 class="plan-name">Economy Pass</h3>
+                                <div class="price">$650<span class="period">/season</span></div>
+                            </div>
+                            <ul class="features-list">
+                                <li><span class="check">✔</span> <strong>5 cm</strong> Trigger Amount</li>
+                                <li><span class="check">✔</span> Single Pass Per Event</li>
+                                <li><span class="check">✔</span> Ridge Cleared Once Per Storm</li>
+                                <li><span class="check">✔</span> Best for Smaller Driveways</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline full-width">Choose Economy</a>
+                        </div>
+
+                        <!-- Standard Pass -->
+                        <div class="pricing-card glass-card featured">
+                            <div class="popular-tag">Most Popular</div>
+                            <div class="card-header">
+                                <h3 class="plan-name">Standard Pass</h3>
+                                <div class="price">$800<span class="period">/season</span></div>
+                            </div>
+                            <ul class="features-list">
+                                <li><span class="check">✔</span> <strong>3 cm</strong> Trigger Amount</li>
+                                <li><span class="check">✔</span> Initial Ridge Clearing</li>
+                                <li><span class="check">✔</span> Driveway Markers Included</li>
+                                <li><span class="check">✔</span> Storm Communication</li>
+                                <li><span class="check">✔</span> Best for Families & Commuters</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary full-width">Choose Standard</a>
+                        </div>
+
+                        <!-- Premium Pass -->
+                        <div class="pricing-card glass-card">
+                            <div class="card-header">
+                                <h3 class="plan-name">Premium Pass</h3>
+                                <div class="price">$950<span class="period">/season</span></div>
+                            </div>
+                            <ul class="features-list">
+                                <li><span class="check">✔</span> <strong>2-3 cm</strong> Trigger Amount</li>
+                                <li><span class="check">✔</span> Priority Routing</li>
+                                <li><span class="check">✔</span> Heavy Drift Cleanup</li>
+                                <li><span class="check">✔</span> Guaranteed Ridge Cleanup</li>
+                                <li><span class="check">✔</span> Best for Corner Lots</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-outline full-width">Choose Premium</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <div class="container text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">Check <span class="text-gradient">Availability</span></h2>
+                        <p class="section-subtitle">Use the <strong>Search Icon (🔍)</strong> or drop a pin to check
+                            your
+                            coverage.</p>
+                    </div>
+
+                    <!-- Map Container -->
+                    <div id="service-map" class="glass-card"></div>
+                    <p class="text-center" style="margin-top: 1rem; color: var(--clr-text-secondary);">
+                        <small>Tip: Click the magnifying glass in the top-left to type your address.</small>
+                    </p>
+
+                    <div class="cta-box glass-card" style="margin-top: 3rem;">
+                        <h2>Ready for a Snow-Free Winter?</h2>
+                        <p>Spots are filling up fast for the 2024/2025 season.</p>
+                        <br>
+                        <a href="mailto:info@pvsnow.ca" class="btn btn-primary btn-large">Contact Us Now</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Pembina Valley Snow. All rights reserved.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                    <a href="terms.html" style="color: var(--clr-ice-400); margin-right: 1rem;">Terms of Service</a>
+                    <a href="handbook.html" style="color: var(--clr-ice-400);">Customer Handbook</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- Custom Success Modal -->
+        <div id="success-modal" class="modal-overlay">
+            <div class="modal-content glass-card">
+                <div class="modal-icon">🎉</div>
+                <h3>Inquiry Received!</h3>
+                <p>Thanks! We've received your location and email.</p>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--clr-text-secondary);">
+                    We'll check our route and get back to you shortly.
+                </p>
+                <button onclick="closeModal()" class="btn btn-primary full-width" style="margin-top: 1.5rem;">Got
+                    it!</button>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+        <script src="main.js"></script>
+</body>
+
+</html>

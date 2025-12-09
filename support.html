@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support & FAQ | Pembina Valley Snow</title>
+    <meta name="description" content="Get support and answers to common questions about our snow removal service.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/PVS%20Flavicon.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-card">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <img src="assets/pvslogo.png" alt="PVS Logo" height="50">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="support.html" class="active" style="color: var(--clr-ice-400);">Support</a></li>
+                <li><a href="index.html#contact" class="btn btn-primary">Reserve Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h1 class="section-title">SUPPORT & <span class="text-gradient">FAQ</span></h1>
+                    <p class="section-subtitle">Common questions and contact options.</p>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-container">
+
+                    <div class="faq-item">
+                        <div class="faq-question">When do you come to clear snow?</div>
+                        <div class="faq-answer">
+                            We monitor the weather 24/7. When snow accumulation reaches your plan's trigger amount
+                            (e.g., 3cm or 5cm) after a storm ends or settles, we deploy our fleet. You will typically
+                            receive an alert when we are on our way.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">What about the ridge left by the city plow?</div>
+                        <div class="faq-answer">
+                            Yes! We know the city plow often blocks your driveway right after we leave. Our "Ridge
+                            Cleanup" guarantee covers this. We do a dedicated "Ridge Run" to clear those icy blocks so
+                            you can get in and out.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Are you insured?</div>
+                        <div class="faq-answer">
+                            Absolutely. We are fully insured for residential snow removal operations in Morden and
+                            Winkler.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">Do you use salt or sand?</div>
+                        <div class="faq-answer">
+                            Our primary service is snow blowing and clearing. Salting or sanding services can be
+                            arranged as an add-on or upon request for specific icy conditions, but are not included in
+                            the standard seasonal pass.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">What if I have vehicles in the driveway?</div>
+                        <div class="faq-answer">
+                            We ask that you move vehicles if possible to allow for a full clean. If a vehicle is in the
+                            way, we will clear around it as safely and closely as possible, but we cannot be responsible
+                            for snow left underneath the vehicle.
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Contact Info -->
+                <div class="text-center" style="margin-top: 5rem;">
+                    <h2 class="section-title">Still have questions?</h2>
+                    <div class="glass-card"
+                        style="display: inline-block; padding: 2rem; margin-top: 2rem; text-align: left;">
+                        <p style="margin-bottom: 1rem;"><strong>Email:</strong> <a href="mailto:info@pvsnow.ca"
+                                style="color: var(--clr-ice-400);">info@pvsnow.ca</a></p>
+                        <p style="margin-bottom: 1rem;"><strong>Phone:</strong> (204) 730-4189</p>
+                        <p><strong>Service Area:</strong> Morden, Winkler, and surrounding area.</p>
+                        <br>
+                        <a href="index.html#contact" class="btn btn-primary full-width">Check Availability on Map</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Pembina Valley Snow. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                <a href="terms.html" style="color: var(--clr-ice-400); margin-right: 1rem;">Terms of Service</a>
+                <a href="handbook.html" style="color: var(--clr-ice-400);">Customer Handbook</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Toggle Logic
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
