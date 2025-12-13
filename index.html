@@ -34,10 +34,9 @@
                 <img src="assets/pvslogo.png" alt="PVS Logo" height="50">
             </a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active" style="color: var(--clr-ice-400);">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="#contact" class="btn btn-primary">Reserve Now</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact" class="btn btn-primary" style="font-weight: 800;">Reserve Season Pass</a></li>
             </ul>
         </div>
     </nav>
@@ -57,7 +56,9 @@
                     <div class="progress-bar" style="width: 75%;"></div>
                 </div>
                 <p class="capacity-text">Remaining Spots: <strong>12 / 80</strong></p>
-                <a href="#contact" class="btn btn-primary btn-large glow-anim">RESERVE SEASON PASS</a>
+                <a href="#contact" class="btn btn-primary btn-large glow-anim">Reserve Your Season Pass</a>
+                <p style="font-size: 0.9rem; margin-top: 0.75rem; color: var(--clr-text-secondary);">No payment required
+                    to reserve</p>
             </div>
         </div>
         <div class="hero-visual">
@@ -66,7 +67,133 @@
     </header>
 
     <main>
-        <!-- Live Operations Center -->
+        <!-- Pricing Section (Moved Up) -->
+        <section id="pricing" class="section section-dark">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Simple Seasonal Pricing — <span class="text-gradient">No Per-Visit
+                            Fees</span></h2>
+                    <p class="section-subtitle">Competitive rates for Morden & Winkler residents.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Economy Pass -->
+                    <div class="pricing-card glass-card">
+                        <div class="card-header">
+                            <h3 class="plan-name">Economy Pass</h3>
+                            <div class="price">$650<span class="period">/season</span></div>
+                        </div>
+                        <ul class="features-list">
+                            <li><span class="check">✔</span> <strong>5 cm</strong> Trigger Amount</li>
+                            <li><span class="check">✔</span> Single Pass Per Event</li>
+                            <li><span class="check">✔</span> Ridge Cleared Once Per Storm</li>
+                            <li><span class="check">✔</span> Best for Smaller Driveways</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline full-width">Choose Economy</a>
+                    </div>
+
+                    <!-- Standard Pass -->
+                    <div class="pricing-card glass-card featured">
+                        <div class="popular-tag">Most Popular</div>
+                        <div class="card-header">
+                            <h3 class="plan-name">Standard Pass</h3>
+                            <div class="price">$800<span class="period">/season</span></div>
+                        </div>
+                        <ul class="features-list">
+                            <li><span class="check">✔</span> <strong>3 cm</strong> Trigger Amount</li>
+                            <li><span class="check">✔</span> Initial Ridge Clearing</li>
+                            <li><span class="check">✔</span> Driveway Markers Included</li>
+                            <li><span class="check">✔</span> Storm Communication</li>
+                            <li><span class="check">✔</span> Best for Families & Commuters</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary full-width">Choose Standard</a>
+                    </div>
+
+                    <!-- Premium Pass -->
+                    <div class="pricing-card glass-card">
+                        <div class="card-header">
+                            <h3 class="plan-name">Premium Pass</h3>
+                            <div class="price">$950<span class="period">/season</span></div>
+                        </div>
+                        <ul class="features-list">
+                            <li><span class="check">✔</span> <strong>2-3 cm</strong> Trigger Amount</li>
+                            <li><span class="check">✔</span> Priority Routing</li>
+                            <li><span class="check">✔</span> Heavy Drift Cleanup</li>
+                            <li><span class="check">✔</span> Guaranteed Ridge Cleanup</li>
+                            <li><span class="check">✔</span> Best for Corner Lots</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline full-width">Choose Premium</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What Happens When It Snows? (New Section) -->
+        <section id="how-it-works" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">WHAT HAPPENS <span class="text-gradient">WHEN IT SNOWS?</span></h2>
+                    <p class="section-subtitle">Our automated response plan.</p>
+                </div>
+                <div class="timeline-steps">
+                    <div class="timeline-step">
+                        <div class="step-circle">1</div>
+                        <h3 class="step-title">Trigger Met</h3>
+                        <p style="color: var(--clr-text-secondary);">Snowfall reaches your plan's trigger amount
+                            (2-5cm).</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-circle">2</div>
+                        <h3 class="step-title">Deployed</h3>
+                        <p style="color: var(--clr-text-secondary);">Tractor fleet activates automatically. No call
+                            needed.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-circle">3</div>
+                        <h3 class="step-title">Cleared</h3>
+                        <p style="color: var(--clr-text-secondary);">We clear your driveway quickly and cleanly with
+                            snowblowers.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-circle">4</div>
+                        <h3 class="step-title">Ridge Gone</h3>
+                        <p style="color: var(--clr-text-secondary);">We return to clear the city plow ridge at the end
+                            of driveway.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipment Differentiation (Was Tractor Advantage) -->
+        <section class="section section-tractor-advantage">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">PROFESSIONAL <span class="text-gradient">EQUIPMENT</span></h2>
+                    <p class="section-subtitle">Not Pickup Trucks.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">🚜</div>
+                        <h3>Blower-Based Clearing</h3>
+                        <p>We blow snow onto the lawn, we don't scrape it into piles. Protects your landscaping.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Zero Damage</h3>
+                        <p>No heavy truck blades scraping your driveway. Advanced inverted blowers are gentle on
+                            surfaces.</p>
+                    </div>
+                    <div class="feature-card glass-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Efficient Routing</h3>
+                        <p>Tractors move efficiently between properties, ensuring faster service times during storms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Operations Center (Moved Down) -->
         <section class="section section-dark section-live-ops">
             <div class="container">
                 <div class="section-header text-center">
@@ -128,37 +255,7 @@
             </div>
         </section>
 
-        <!-- Tractor Advantage Section -->
-        <section class="section section-tractor-advantage">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">THE TRACTOR <span class="text-gradient">ADVANTAGE</span></h2>
-                    <p class="section-subtitle">Why blown snow is better than pushed snow.</p>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card glass-card">
-                        <div class="feature-icon">👀</div>
-                        <h3>Safety & Visibility</h3>
-                        <p>No high snowbanks at your driveway entrance. Maintain clear sightlines for safe exiting onto
-                            the street.</p>
-                    </div>
-                    <div class="feature-card glass-card">
-                        <div class="feature-icon">🌱</div>
-                        <h3>Zero Yard Damage</h3>
-                        <p>We blow snow onto the lawn, we don't scrape it off. Protect your grass and landscaping from
-                            plow damage.</p>
-                    </div>
-                    <div class="feature-card glass-card">
-                        <div class="feature-icon">☀️</div>
-                        <h3>Faster Spring Melt</h3>
-                        <p>Snow is dispersed evenly, not piled high. No massive ice glaciers waiting to melt in late
-                            May.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Keep Aurora Section but simplified header? No, keeping consistent -->
+        <!-- Why Choose Us -->
         <section class="section">
             <div class="container">
                 <div class="section-header text-center">
@@ -186,66 +283,6 @@
             </div>
         </section>
 
-        <!-- Pricing Section -->
-        <section id="pricing" class="section section-dark">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Simple <span class="text-gradient">Pricing</span></h2>
-                    <p class="section-subtitle">Competitive rates for Morden & Winkler residents.</p>
-                </div>
-
-                <div class="pricing-grid">
-                    <!-- Economy Pass -->
-                    <div class="pricing-card glass-card">
-                        <div class="card-header">
-                            <h3 class="plan-name">Economy Pass</h3>
-                            <div class="price">$650<span class="period">/season</span></div>
-                        </div>
-                        <ul class="features-list">
-                            <li><span class="check">✔</span> <strong>5 cm</strong> Trigger Amount</li>
-                            <li><span class="check">✔</span> Single Pass Per Event</li>
-                            <li><span class="check">✔</span> Ridge Cleared Once Per Storm</li>
-                            <li><span class="check">✔</span> Best for Smaller Driveways</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline full-width">Choose Economy</a>
-                    </div>
-
-                    <!-- Standard Pass -->
-                    <div class="pricing-card glass-card featured">
-                        <div class="popular-tag">Most Popular</div>
-                        <div class="card-header">
-                            <h3 class="plan-name">Standard Pass</h3>
-                            <div class="price">$800<span class="period">/season</span></div>
-                        </div>
-                        <ul class="features-list">
-                            <li><span class="check">✔</span> <strong>3 cm</strong> Trigger Amount</li>
-                            <li><span class="check">✔</span> Initial Ridge Clearing</li>
-                            <li><span class="check">✔</span> Driveway Markers Included</li>
-                            <li><span class="check">✔</span> Storm Communication</li>
-                            <li><span class="check">✔</span> Best for Families & Commuters</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-primary full-width">Choose Standard</a>
-                    </div>
-
-                    <!-- Premium Pass -->
-                    <div class="pricing-card glass-card">
-                        <div class="card-header">
-                            <h3 class="plan-name">Premium Pass</h3>
-                            <div class="price">$950<span class="period">/season</span></div>
-                        </div>
-                        <ul class="features-list">
-                            <li><span class="check">✔</span> <strong>2-3 cm</strong> Trigger Amount</li>
-                            <li><span class="check">✔</span> Priority Routing</li>
-                            <li><span class="check">✔</span> Heavy Drift Cleanup</li>
-                            <li><span class="check">✔</span> Guaranteed Ridge Cleanup</li>
-                            <li><span class="check">✔</span> Best for Corner Lots</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline full-width">Choose Premium</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container text-center">
@@ -266,7 +303,7 @@
                     <h2>Ready for a Snow-Free Winter?</h2>
                     <p>Spots are filling up fast for the 2024/2025 season.</p>
                     <br>
-                    <a href="mailto:info@pvsnow.ca" class="btn btn-primary btn-large">Contact Us Now</a>
+                    <a href="mailto:info@pvsnow.ca" class="btn btn-primary btn-large">Reserve Season Pass Now</a>
                 </div>
             </div>
         </section>
