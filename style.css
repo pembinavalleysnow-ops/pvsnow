@@ -123,6 +123,12 @@ a {
     padding: 5rem 0;
 }
 
+@media (min-width: 1024px) {
+    .section {
+        padding: 8rem 0;
+    }
+}
+
 .section-header {
     margin-bottom: 3rem;
 }
